@@ -1,8 +1,8 @@
-GapTrip (ギャップ・トリップ) 🚀
+# GapTrip概要
 
-「行く前の期待（妄想）」と「行った後の結果（現実）」のギャップを楽しむ、飯と旅の記録アプリ。
+**「行く前の期待（妄想）」と「行った後の結果（現実）」のギャップを楽しむ、飯と旅の記録アプリ。**
 
-🛠 技術スタック
+## 🛠 技術スタック
 
 Backend: Java 21 (Spring Boot 3)
 
@@ -12,7 +12,7 @@ Database: MySQL 8.0
 
 Infrastructure: Docker Compose
 
-📦 環境構築手順
+## 📦 環境構築手順
 
 このプロジェクトは Docker Compose を使用して環境を構築しています。
 
@@ -24,36 +24,30 @@ Docker Desktop がインストールされ、起動していること。
 
 プロジェクトをクローンした後、以下のコマンドで実行権限を付与してください。
 
-# Mac/Linux の場合 (Backendのビルドツールに権限付与)
-chmod +x backend/mvnw
+## Mac/Linux の場合だけ必要なこと (Backendのビルドツールに権限付与)
+以下のコマンドを実行
 
+`chmod +x backend/mvnw`
 
-3. アプリケーションの起動
+## 3. アプリケーションの起動
 
 以下のコマンドを実行すると、Backend, Frontend, Database が全て起動します。
 
-docker compose up -d
+`docker compose up -d`
 
 
-4. アクセスURL
+## 4. アクセスURL
 
 Frontend (画面): http://localhost:3000
 
 Backend (API): http://localhost:8080
 
-DB接続情報:
+### DB接続情報:
 
-Host: localhost
+`Host: localhost`
 
-Port: 3306
+`Port: 3306`
 
-User: user
+`User: user`
 
-Pass: password
-
-🐛 トラブルシューティング
-
-Javaの変更が反映されない場合:
-ホットリロード設定を入れていますが、反映されない場合は以下を実行してください。
-
-docker compose restart backend
+`Pass: password`
